@@ -1,0 +1,23 @@
+package:
+  name: cmake-xpack
+  version: 3.18.3_1
+
+source:
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-darwin-x64.tar.gz # [osx]
+  sha256: 037bffd8c10769944e8754d637b8999ec4993c4666449e633969b4561c350321 # [osx]
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-linux-x64.tar.gz # [linux64]
+  sha256: 8ef4f9dc5361ba73ee8a0d478c7f1c3de2c173c9ffd381e787fc16e6cbfdea07 # [linux64]
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-linux-arm64.tar.gz # [aarch64]
+  sha256: de64ad068f83134af8b3dc405a772f48c8b1ec518ffdb290701be56c8e284702 # [aarch64]
+
+build:
+  string: "0"
+
+test:
+  commands:
+    - cmake --version
+
+about:
+  home: https://github.com/xpack-dev-tools/cmake-xpack
+  license: MIT
+  summary: xPack CMake

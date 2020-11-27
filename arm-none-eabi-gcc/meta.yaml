@@ -1,0 +1,23 @@
+package:
+  name: arm-none-eabi-gcc
+  version: 9_2020_q2_update
+
+source:
+  url: https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-mac.tar.bz2 # [osx]
+  md5: 75a171beac35453fd2f0f48b3cb239c3 # [osx]
+  url: https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2 # [linux64]
+  md5: 2b9eeccc33470f9d3cda26983b9d2dc6 # [linux64]
+  url: https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-aarch64-linux.tar.bz2 # [aarch64]
+  md5: 000b0888cbe7b171e2225b29be1c327c # [aarch64]
+
+build:
+  string: "0"
+
+test:
+  commands:
+    - arm-none-eabi-gcc --version
+
+about:
+  home: https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+  license: GPL
+  summary: GNU Arm Embedded GCC

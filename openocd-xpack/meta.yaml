@@ -1,0 +1,23 @@
+package:
+  name: openocd-xpack
+  version: 0.10.0_15
+
+source:
+  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-darwin-x64.tar.gz # [osx]
+  sha256: 370915b252ff3096b46663943fa040296d75991431228c5cfe315082cff10cab # [osx]
+  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-linux-x64.tar.gz # [linux64]
+  sha256: 0a880ef296da083c4eb06ed589181414ae73d64a7dcec5642676207aeacc3e54 # [linux64]
+  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-linux-arm64.tar.gz # [aarch64]
+  sha256: 874c0bb93812109f4136b8b4670702ae4d76aa0d6327989a30596cabf4e052b5 # [aarch64]
+
+build:
+  string: "0"
+
+test:
+  commands:
+    - openocd --version
+
+about:
+  home: https://github.com/xpack-dev-tools/openocd-xpack
+  license: MIT
+  summary: xPack OpenOCD
