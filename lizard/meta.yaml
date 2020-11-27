@@ -1,0 +1,43 @@
+{% set name = "lizard" %}
+{% set version = "1.17.7" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: d08e7afb4534fc326401ede2d5aace027757fb1a9deb3cc9f8e7f4339983c630
+
+build:
+  number: 0
+  entry_points:
+    - lizard = lizard:main
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - lizard_ext
+    - lizard_languages
+  commands:
+    - lizard --help
+
+about:
+  home: "http://www.lizard.ws"
+  license: MIT
+  license_family: MIT
+  license_file: 
+  summary: "A code analyzer without caring the C/C++ header files. It works with Java, C/C++, JavaScript, Python, Ruby, Swift, Objective C. Metrics includes cyclomatic complexity number etc."
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
