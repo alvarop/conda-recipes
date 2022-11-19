@@ -9,6 +9,8 @@ source:
   sha256: 8ef4f9dc5361ba73ee8a0d478c7f1c3de2c173c9ffd381e787fc16e6cbfdea07 # [linux64]
   url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-linux-arm64.tar.gz # [aarch64]
   sha256: de64ad068f83134af8b3dc405a772f48c8b1ec518ffdb290701be56c8e284702 # [aarch64]
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-win32-x64.zip # [win]
+  sha256: ac6f880b501c00409b176ac29bcaa68c015fbd372b08edbc72e86e80a3812dea # [win]
 
 build:
   string: "0"

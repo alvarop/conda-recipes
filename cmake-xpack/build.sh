@@ -1,4 +1,4 @@
-export TARGET=xpack-openocd
+export TARGET=cmake-xpack
 export TARGET_PREFIX="${PREFIX}/${TARGET}"
 
 mkdir -p "${PREFIX}"/bin
