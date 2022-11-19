@@ -15,7 +15,8 @@ build:
 
 test:
   commands:
-    - arm-none-eabi-gcc --version
+    - arm-none-eabi-gcc --version # [osx linux64]
+    - arm-none-eabi-gcc.exe --version # [win]
 
 about:
   home: https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
