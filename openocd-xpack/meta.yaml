@@ -1,14 +1,16 @@
 package:
   name: openocd-xpack
-  version: 0.10.0_15
+  version: 0.12.0_1
 
 source:
-  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-darwin-x64.tar.gz # [osx]
-  sha256: 370915b252ff3096b46663943fa040296d75991431228c5cfe315082cff10cab # [osx]
-  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-linux-x64.tar.gz # [linux64]
-  sha256: 0a880ef296da083c4eb06ed589181414ae73d64a7dcec5642676207aeacc3e54 # [linux64]
-  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-linux-arm64.tar.gz # [aarch64]
-  sha256: 874c0bb93812109f4136b8b4670702ae4d76aa0d6327989a30596cabf4e052b5 # [aarch64]
+  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-1/xpack-openocd-0.12.0-1-darwin-x64.tar.gz # [osx]
+  sha256: ca569b6bfd9b3cd87a5bc88b3a33a5c4fe854be3cf95a3dcda1c194e8da9d7bb # [osx]
+  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-1/xpack-openocd-0.12.0-1-darwin-arm64.tar.gz # [arm64]
+  sha256: db4b501a059944551365ee6f6dad95f5a7d0808654939f747c167c5da743fdb7 # [arm64]
+  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-1/xpack-openocd-0.12.0-1-linux-x64.tar.gz # [linux64]
+  sha256: 940f22eccddb0946b69149d227948f77d5917a2c5f1ab68e5d84d614c2ceed20 # [linux64]
+  url: https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-1/xpack-openocd-0.12.0-1-linux-arm64.tar.gz # [aarch64]
+  sha256: a86b3ecc256cb870f074a8e633e791ed09102c8ed0d639ae49782c51a404dfbc # [aarch64]
 
 build:
   string: "0"
