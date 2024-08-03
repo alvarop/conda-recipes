@@ -1,18 +1,21 @@
 package:
   name: cmake-xpack
-  version: 3.18.3_1
+  version: 3.20.6_2
 
 source:
-  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-darwin-x64.tar.gz # [osx]
-  sha256: 037bffd8c10769944e8754d637b8999ec4993c4666449e633969b4561c350321 # [osx]
-  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-linux-x64.tar.gz # [linux64]
-  sha256: 8ef4f9dc5361ba73ee8a0d478c7f1c3de2c173c9ffd381e787fc16e6cbfdea07 # [linux64]
-  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.18.3-1/xpack-cmake-3.18.3-1-linux-arm64.tar.gz # [aarch64]
-  sha256: de64ad068f83134af8b3dc405a772f48c8b1ec518ffdb290701be56c8e284702 # [aarch64]
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.20.6-2/xpack-cmake-3.20.6-2-darwin-x64.tar.gz # [osx]
+  sha256: 4647c8bd45cc2ee151fa6cf60d60db991fa96cd8b4593126569af0e382d17c44 # [osx]
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.20.6-2/xpack-cmake-3.20.6-2-darwin-arm64.tar.gz # [arm64]
+  sha256: 80cfe688c6290a2eb527b5de19ed60848cc7d423dc643fa7152eedbf4c336a85 # [arm64]
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.20.6-2/xpack-cmake-3.20.6-2-linux-x64.tar.gz # [linux64]
+  sha256: 0995feab1594eeb39d51ed008c122f56328d4f7bf702be4919e1a82a0e13bcb6 # [linux64]
+  url: https://github.com/xpack-dev-tools/cmake-xpack/releases/download/v3.20.6-2/xpack-cmake-3.20.6-2-linux-arm64.tar.gz # [aarch64]
+  sha256: 04aae33537e211cfc6062faece07ac0f4ab28062015186658ac7a02ad5ae6dea # [aarch64]
 
 build:
   string: "0"
-
+  binary_relocation: False
+  
 test:
   commands:
     - cmake --version
@@ -21,3 +24,4 @@ about:
   home: https://github.com/xpack-dev-tools/cmake-xpack
   license: MIT
   summary: xPack CMake
+  

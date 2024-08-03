@@ -1,23 +1,30 @@
 package:
   name: arm-none-eabi-gcc
-  version: 9_2020_q2_update
+  version: 13.2.rel1
+
+# Get files from
+# https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
 
 source:
-  url: https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-mac.tar.bz2 # [osx]
-  md5: 75a171beac35453fd2f0f48b3cb239c3 # [osx]
-  url: https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2 # [linux64]
-  md5: 2b9eeccc33470f9d3cda26983b9d2dc6 # [linux64]
-  url: https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-aarch64-linux.tar.bz2 # [aarch64]
-  md5: 000b0888cbe7b171e2225b29be1c327c # [aarch64]
+  url: https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-darwin-x86_64-arm-none-eabi.tar.xz # [osx]
+  sha256: 075faa4f3e8eb45e59144858202351a28706f54a6ec17eedd88c9fb9412372cc # [osx]
+  url: https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-darwin-arm64-arm-none-eabi.tar.xz # [arm64]
+  sha256: 39c44f8af42695b7b871df42e346c09fee670ea8dfc11f17083e296ea2b0d279 # [arm64]
+  url: https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz # [linux64]
+  sha256: 6cd1bbc1d9ae57312bcd169ae283153a9572bd6a8e4eeae2fedfbc33b115fdbb # [linux64]
+  url: https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-aarch64-arm-none-eabi.tar.xz # [aarch64]
+  sha256: 8fd8b4a0a8d44ab2e195ccfbeef42223dfb3ede29d80f14dcf2183c34b8d199a # [aarch64]
 
 build:
   string: "0"
+  binary_relocation: False
 
 test:
   commands:
     - arm-none-eabi-gcc --version
 
 about:
-  home: https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+  home: https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain
   license: GPL
   summary: GNU Arm Embedded GCC
+  
